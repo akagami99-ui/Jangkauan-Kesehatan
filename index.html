@@ -108,11 +108,11 @@
         function pop_Kecamatan_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Kecamatan</th>\
+                        <th scope="row">Kecamatan :</th>\
                         <td>' + (feature.properties['Kecamatan'] !== null ? autolinker.link(feature.properties['Kecamatan'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Kabupaten</th>\
+                        <th scope="row">Kabupaten :</th>\
                         <td>' + (feature.properties['Kabupaten'] !== null ? autolinker.link(feature.properties['Kabupaten'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -155,7 +155,7 @@
         function pop_Jalan_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Fungsi'] !== null ? autolinker.link(feature.properties['Fungsi'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Fungsi:'] !== null ? autolinker.link(feature.properties['Fungsi'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -195,7 +195,7 @@
         function pop_Jarak5000Meter_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Jarak'] !== null ? autolinker.link(feature.properties['Jarak'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Jarak :'] !== null ? autolinker.link(feature.properties['Jarak'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
